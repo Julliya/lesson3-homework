@@ -15,14 +15,14 @@
        <form method="POST" action="https://formspree.io/julli.babenko@gmail.com">
 			<fieldset>
 				<legend> анкета для відвідувачів</legend>
-    			<label>	Ваше ім'я:<br> 
-    				<input type ="text" name="name" placeholder="Ivan">
+    			<label>	Ваше ім'я:<span style="color:red">*</span><br> 
+    				<input type ="text" name="name" placeholder="Ivan" required>
     			</label><br><br>
-    			<label>E-mail:<br>
-    				<input type="email" name="email" placeholder="e-ivan@gmail.com">
+    			<label>E-mail:<span style="color:red">*</span><br>
+    				<input type="email" name="email" placeholder="e-ivan@gmail.com" required>
     			</label><br><br>
-    			<label>Якщо тобі не підходить призначена дата свята, обери більш зручну для себе:<br>
-    				<input type="date" name="bday">
+    			<label>Якщо тобі не підходить призначена дата свята, обери більш зручну для себе:<span style="color:red">*</span><br>
+    				<input type="date" name="bday" required>
     			</label><br><br>
     			<label>	Запропонуй тему свята:<br>
     				<input type="text" name="tema">
@@ -43,13 +43,13 @@
     				<option>Крим</option>
     			</select>
     			<br><br>	
-    			<label>Ти плануєш заночувати?</label><br>
-    			    <input type ="radio" name="night" id="ye"><label for="ye">Так</label><br>
-    				<input type ="radio" name="night" id="no"><label for="no" >Ні</label><br>
+    			<label>Ти плануєш заночувати? <span style="color:red">*</span></label><br>
+    			    <input type ="radio" name="night" id="ye" required><label for="ye">Так</label><br>
+    				<input type ="radio" name="night" id="no" required><label for="no" >Ні</label><br>
     			<br>
-    			<label>Чи прийде хтось разом з тобою?</label><br>
-    			    <input type ="radio" name="friend" id="yes"><label for="yes">Так</label><br>
-    				<input type ="radio" name="friend" id="not"><label for="not" >Ні</label><br>
+    			<label>Чи прийде хтось разом з тобою? <span style="color:red">*</span></label><br>
+    			    <input type ="radio" name="friend" id="yes" required><label for="yes">Так</label><br>
+    				<input type ="radio" name="friend" id="not" required><label for="not" >Ні</label><br>
     			<br>
     			<label><small>Якщо "так", назви тих, хто приїде з тобою</small><br>
     				<input type="text" name="why" size="30">
