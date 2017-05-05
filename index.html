@@ -5,6 +5,73 @@
     <title>Опитування</title>
 </head>
 <body>
-    <a href="table.html">Перейти на другу сторінку 1</a>
+    <header>
+        <h1 style="text-align:center">Планування святкування дня народження</h1>
+    </header>
+    <nav style="text-align:center">
+        <a href="table.html">Перейти на другу сторінку </a>
+    </nav>
+    <main>
+       <form method="POST" action="https://formspree.io/julli.babenko@gmail.com">
+			<fieldset>
+				<legend> анкета для відвідувачів</legend>
+    			<label>	Ваше ім'я:<br> 
+    				<input type ="text" name="name" placeholder="Ivan">
+    			</label><br><br>
+    			<label>E-mail:<br>
+    				<input type="email" name="email" placeholder="e-ivan@gmail.com">
+    			</label><br><br>
+    			<label>Якщо тобі не підходить призначена дата свята, обери більш зручну для себе:<br>
+    				<input type="date" name="bday">
+    			</label><br><br>
+    			<label>	Запропонуй тему свята:<br>
+    				<input type="text" name="tema">
+    			</label><br><br>
+    			<label>Ти планував/ла бути на святі від початку до кінця?</label><br>
+    				<input type ="radio" name="time" id="y"><label for="y">Так</label><br>
+    				<input type ="radio" name="time" id="n"><label for="n" >Ні</label><br>
+    			<br>
+    			<label><small>Якщо "ні" повідом коли приїдеш/поїдеш</small><br>
+    				<input type="text" name="when" size="30">
+    			</label><br><br>
+    			
+    			<label>Обери місце проведення:</label> <!--Do I need any tags here?-->
+    			<select name="place">
+    				<option>Львів</option>
+    				<option>Київ</option>
+    				<option>Карпати</option>
+    				<option>Крим</option>
+    			</select>
+    			<br><br>	
+    			<label>Ти плануєш заночувати?</label><br>
+    			    <input type ="radio" name="night" id="ye"><label for="ye">Так</label><br>
+    				<input type ="radio" name="night" id="no"><label for="no" >Ні</label><br>
+    			<br>
+    			<label>Чи прийде хтось разом з тобою?</label><br>
+    			    <input type ="radio" name="friend" id="yes"><label for="yes">Так</label><br>
+    				<input type ="radio" name="friend" id="not"><label for="not" >Ні</label><br>
+    			<br>
+    			<label><small>Якщо "так", назви тих, хто приїде з тобою</small><br>
+    				<input type="text" name="why" size="30">
+    			</label>
+    			<br><br>
+    		    <label>Чи планував/ла ти принести що-небудь з нижче наведеного?</label><br>
+    				<input type ="checkbox" id="food"><label for="food">їжу</label><br>
+    				<input type ="checkbox" id="alcohol"><label for="alcohol">алкогольні напої</label><br>
+    				<input type ="checkbox" id="drinks"><label for="drinks">безалкогольні напої</label><br>
+    				<input type ="checkbox" id="game"><label for="game">ігри</label><br>
+    				<input type ="checkbox" id="mus"><label for="mus">музику</label>
+    			<br><br>	
+    			<label>Місце для ідей, питань, зауважень, ...<br>
+    				<textarea cols="60" rows="5" name="wishes"></textarea>
+    			</label><br><br>
+    				
+    				<input type ="submit" value="Надіслати">
+    			    <input type="reset" value="Скинути">
+	        </fieldset>
+        </form>
+        
+    </main>
+    
 </body>
 </html>
